@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic UI Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="container space-y-8">
+        <h1 class="text-3xl font-bold text-center mb-6">Interactive UI Showcase</h1>
+
+        <!-- Section 1: Animate a box with a button -->
+        <div class="flex flex-col items-center space-y-4">
+            <h2 class="text-xl font-semibold">Animate a Box with a Button</h2>
+            <div id="animated-box" class="box">
+                Pulse
+            </div>
+            <button id="pulse-btn" class="btn btn-primary">
+                Trigger Pulse Animation
+            </button>
+        </div>
+
+        <hr class="border-gray-300">
+
+        <!-- Section 2: Card flip on click -->
+        <div class="flex flex-col items-center space-y-4">
+            <h2 class="text-xl font-semibold">Card Flip with a Button</h2>
+            <div id="card-container" class="card-container">
+                <div id="card" class="card">
+                    <div class="card-face card-front">
+                        <p class="text-2xl">Click the Button to Flip</p>
+                    </div>
+                    <div class="card-face card-back">
+                        <p class="text-2xl">Now You See Me!</p>
+                    </div>
+                </div>
+            </div>
+            <button id="card-flip-btn" class="btn btn-primary mt-4">
+                Flip Card
+            </button>
+        </div>
+
+        <hr class="border-gray-300">
+
+        <!-- Section 3: Loading animation start/stop -->
+        <div class="flex flex-col items-center space-y-4">
+            <h2 class="text-xl font-semibold">Loading Animation</h2>
+            <div id="spinner" class="spinner"></div>
+            <div class="flex space-x-4">
+                <button id="start-loading-btn" class="btn btn-primary">
+                    Start Loading
+                </button>
+                <button id="stop-loading-btn" class="btn btn-secondary">
+                    Stop Loading
+                </button>
+            </div>
+        </div>
+
+        <hr class="border-gray-300">
+
+        <!-- Section 4: Popup/modal -->
+        <div class="flex flex-col items-center space-y-4">
+            <h2 class="text-xl font-semibold">Popup Modal</h2>
+            <button id="show-modal-btn" class="btn btn-primary">
+                Show Modal
+            </button>
+        </div>
+
+        <!-- The Modal itself -->
+        <div id="my-modal-overlay" class="modal-overlay">
+            <div id="my-modal" class="modal">
+                <div class="flex flex-col items-center">
+                    <h3 class="text-2xl font-bold mb-4">Welcome to the Modal!</h3>
+                    <p class="text-center mb-6">WELCOME TO PLP!!</p>
+                    <button id="close-modal-btn" class="btn btn-secondary">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
